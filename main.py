@@ -9,6 +9,7 @@ def b1_click():
         if (word in w):
             count +=1
     t1.insert(tk.END,'{}:{}回\n'.format(word,count))
+    e1.delete(0, tk.END)
 def b2_click():
     ans=e2.get()
     if(ans==titles_name[idx]):
@@ -35,6 +36,8 @@ titles=[
     "yamanasi.csv",
     "takase.csv",
     "maihime.csv",
+    "kani.csv",
+    "kazeno.csv"
 ]
 titles_name=[
     "銀河鉄道の夜",
@@ -55,6 +58,8 @@ titles_name=[
     "やまなし",
     "高瀬舟",
     "舞姫",
+    "蟹工船",
+    "風の又三郎"
 ]
 
 idx=random.randint(0,len(titles)-1)
